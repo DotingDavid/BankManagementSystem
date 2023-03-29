@@ -1,0 +1,32 @@
+#include <iostream>
+#include <iomanip>
+
+int main() {
+    std::cout << "+------+--------------+-------------+---------------------+" << std::endl;
+    std::cout << "| ID   | First Name   | Last Name   | Address             |" << std::endl;
+    std::cout << "+------+--------------+-------------+---------------------+" << std::endl;
+    std::cout << "| 001  | John         | Doe         | 123 Main St         |" << std::endl;
+    std::cout << "| 002  | Jane         | Smith       | 456 Elm St          |" << std::endl;
+    std::cout << "| 003  | Bob          | Johnson     | 789 Oak Ave         |" << std::endl;
+    std::cout << "+------+--------------+-------------+---------------------+" << std::endl;
+    
+    // Set column widths and alignment
+    const int id_width = 6;
+    const int name_width = 14;
+    const int address_width = 22;
+    std::cout << std::left << std::setw(id_width) << "| 001"
+              << std::setw(name_width) << "| John"
+              << std::setw(name_width) << "| Doe"
+              << std::setw(address_width) << "| 123 Main St" << "|" << std::endl;
+    std::cout << std::left << std::setw(id_width) << "| 002"
+              << std::setw(name_width) << "| Jane"
+              << std::setw(name_width) << "| Smith"
+              << std::setw(address_width) << "| 456 Elm St" << "|" << std::endl;
+    std::cout << std::left << std::setw(id_width) << "| 003"
+              << std::setw(name_width) << "| Bob"
+              << std::setw(name_width) << "| Johnson"
+              << std::setw(address_width) << "| 789 Oak Ave" << "|" << std::endl;
+    std::cout << "+------+--------------+-------------+---------------------+" << std::endl;
+
+    return 0;
+}
